@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #1f2937;
+    margin: 0;
+    padding: 0;
 }
 
 ul{
@@ -14,7 +15,16 @@ ul{
 a{
     text-decoration: none;
     display: block;
+    color: #f9faf8;
 }
+
+.header, .title, .footer{
+    color: #f9faf8;
+    padding: 24px 200px;
+    background-color: #1f2937;
+}
+
+/* header section styling */
 
 .header{
     display: flex;
@@ -22,9 +32,27 @@ a{
     align-items: center;
 }
 
+.logo{
+    font-size: 24px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+/* title bar section styling */
+
 .title{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 64px;
+    padding-bottom: 92px;
 }
 
 .main-text{
@@ -40,41 +68,137 @@ a{
 .title button{
     background-color: #3882f6;
     color: #f9faf8;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 18px;
     border-radius: 10px;
-    width: 128px;
-    height: 38px;
+    width: 192px;
+    height: 48px;
 }
 
 .introduction{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-basis: 100%;
+    gap: 10px;
 }
 
 .picture{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 100%;
 }
 
 .picture img{
-    width: 600px;
+    width: 100%;
     height: auto;
 }
 
-.header, .title, .footer{
-    color: #f9faf8;
-    padding: 0px 100px
+/* info section styling  */
+.info-title{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    text-align: center;
+    padding-top: 48px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    padding: 48px 100px 92px;
 }
 
-.logo{
+.cover{
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.cover img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.record{
+    max-width: 250px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-name{
+    font-weight: 600;
+}
+
+.artist{
+    font-style: italic;
+}
+
+/* quote section styling */
+.quote-section{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 300px;
+}
+
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1f2937;
+}
+
+.author{
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
+    align-self: flex-end;
 }
 
-.logo img{
-    width: 50px;
+/*banner section styling */
+.banner{
+    background-color: #3882f6;
+    margin: 96px 200px;
+    padding: 50px 112px;
+    border-radius: 8px;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-title{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.banner-text{
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.banner button{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid #f9faf8;
+    padding: 10px 30px;
+    color: #f9faf8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* footer section styling */
+.footer{
+    text-align: center;
 }
 
